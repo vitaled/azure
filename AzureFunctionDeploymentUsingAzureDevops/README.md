@@ -8,10 +8,11 @@ We are going to build a very useless API
 
 ## Prerequisites
 
-- [Azure Cloud Subscription](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions)
-- [Python](https://www.python.org/downloads/)
-- [Visual Studio Code](https://code.visualstudio.com/Download)
-- [Azure Tools Visual Studio Code Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)
+1) [Azure Cloud Subscription](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions)
+2) [Azure DevOps account](https://azure.microsoft.com/en-us/services/devops/?nav=min)
+3) [Python](https://www.python.org/downloads/)
+4) [Visual Studio Code](https://code.visualstudio.com/Download)
+5) [Azure Tools Visual Studio Code Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)
 
 
 ## Step 1: Import the repo
