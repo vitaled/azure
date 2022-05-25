@@ -7,11 +7,12 @@ def extract_palyndromes(text:str):
     palyndromes = []
 
     text = text.lower()
-
+ 
     for token in text.split():
+        token = token.lower()
+        token = ''.join(filter(str.isalnum,token))
         if is_palyndrome(token):
             palyndromes.append(token)
-
 
     return list(set(palyndromes))
 

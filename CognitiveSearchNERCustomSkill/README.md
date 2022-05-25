@@ -71,6 +71,28 @@ Create a container called `books` in your storage account and upload into it the
 
 ## Step 4: Create your search Stack
 
+From a PowerShell terminal run the script init-books-search.ps1
+
+```psh
+.\init-books-search.ps1
+```
+You will be prompted to insert the following information:
+```
+Selecting subscription <insert subscription id>
+Please enter your storage account name: : <insert storage account name>
+Please enter your storage account key: : <insert storage account key> 
+Please enter your search service name: :  <insert storage account key> 
+Please enter your search service key: : <insert service key>
+Please enter your Cognitive Service Key: : <insert cognitive service key>
+Please enter your Function App URI: : <insert function uri app>
+```
+
+## Step 5: Verify your index
+
+Go to the `index` section of your Cognitive Search Service and check that the palindromes are present and are correctly extracted from the text
+
+![Go to function](./img/chech_index.jpg)
+
 
 
 
