@@ -1,8 +1,8 @@
 {
-    "azureFunctions.deploySubpath": "AzureFunctionDeploymentUsingAzureDevops",
+    "azureFunctions.deploySubpath": "CognitiveSearchNERCustomSkill",
     "azureFunctions.scmDoBuildDuringDeployment": true,
     "azureFunctions.pythonVenv": ".venv",
     "azureFunctions.projectLanguage": "Python",
-    "azureFunctions.projectRuntime": "~3",
+    "azureFunctions.projectRuntime": "~4",
     "debug.internalConsoleOptions": "neverOpen"
 }
