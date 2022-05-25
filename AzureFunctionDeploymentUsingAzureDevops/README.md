@@ -38,9 +38,9 @@ Then you can open this folder using Visual Studio Code
 
 ## Step 2: Deploy the Azure Function
 
-In the next step we are going to manualy deploy the Azure Function in your Azure Subscription.
+In the next step, we are going to manually deploy the Azure Function in your Azure Subscription.
 
-To da that you should right click on the `AzureFunctionDeploymentUsingAzureDevops` subfolder and then click on **Deploy to Function App...**
+To do that you should right-click on the `AzureFunctionDeploymentUsingAzureDevops` subfolder and then click on **Deploy to Function App...**
 
 ![Deploy to Functions](./img/04_deploy_function_app.png)
 
@@ -48,7 +48,7 @@ You will be asked to select a subscription:
 
 ![Select subscription](./img/05_select_subscription.png)
 
-Then click in **Create new Function App in Azure...**
+Then click on **Create new Function App in Azure...**
 
 ![Create new function](./img/06_create_new_function.png)
 
