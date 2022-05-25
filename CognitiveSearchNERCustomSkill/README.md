@@ -91,7 +91,7 @@ Please enter your Function App URI: : <insert function uri app>
 
 Go to the `index` section of your Cognitive Search Service and check that the palindromes are present and are correctly extracted from the text
 
-![Go to function](./img/chech_index.jpg)
+![Go to function](./img/check_index.jpg)
 
 
 
