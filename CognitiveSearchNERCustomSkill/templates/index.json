@@ -219,6 +219,5 @@
     },
     "encryptionKey": null,
     "semantic": null,
-    "normalizers": [],
-    "@odata.etag": "\"0x8DA3A76EE9B3FAB\""
+    "normalizers": []
   }

@@ -1,0 +1,61 @@
+{
+    "name": "books-skillset",
+    "description": "Skillset created from the portal. skillsetName: books-skillset; contentField: abstract; enrichmentGranularity: document; knowledgeStoreStorageAccount: ;",
+    "skills": [
+        {
+            "@odata.type": "#Microsoft.Skills.Text.LanguageDetectionSkill",
+            "name": "#1",
+            "description": null,
+            "context": "/document",
+            "defaultCountryHint": null,
+            "modelVersion": null,
+            "inputs": [
+                {
+                    "name": "text",
+                    "source": "/document/abstract"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "languageCode",
+                    "targetName": "language"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#Microsoft.Skills.Custom.WebApiSkill",
+            "name": "#2",
+            "description": "",
+            "context": "/document",
+            "uri": "{{azureFunctionUri}}",
+            "httpMethod": "POST",
+            "timeout": "PT30S",
+            "batchSize": 1,
+            "degreeOfParallelism": 1,
+            "inputs": [
+                {
+                    "name": "title",
+                    "source": "/document/title"
+                },
+                {
+                    "name": "abstract",
+                    "source": "/document/abstract"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "palyndromes",
+                    "targetName": "palyndromes"
+                }
+            ],
+            "httpHeaders": {}
+        }
+    ],
+    "cognitiveServices": {
+        "@odata.type": "#Microsoft.Azure.Search.CognitiveServicesByKey",
+        "description": "/subscriptions/3ea430f5-9c30-4a32-ae53-1073ec3d202f/resourceGroups/rg-emiliaromagna-poc/providers/Microsoft.CognitiveServices/accounts/cs-emiliaromagna-poc",
+        "key": "e889f805904a43be861001d59791f185"
+    },
+    "knowledgeStore": null,
+    "encryptionKey": null
+}

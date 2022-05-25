@@ -11,26 +11,17 @@ We are going to create a very simple (and mostly useless) custom skill extractin
 
 1) [Azure Cloud Subscription](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions)
 2) [Azure Cognitive Search service](https://docs.microsoft.com/en-us/azure/search/search-create-service-portal)
-3) [Python](https://www.python.org/downloads/)
-4) [Visual Studio Code](https://code.visualstudio.com/Download)
-5) [Azure Tools Visual Studio Code Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)
+3) [Storage account service](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal)
+4) [Python](https://www.python.org/downloads/)
+5) [Visual Studio Code](https://code.visualstudio.com/Download)
+6) [Azure Tools Visual Studio Code Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)
 
+   
 ### Step 1 
 
-## Step 1: Import the repo
+## Step 1: Clone the repo
 
-The first step is to import this repository into your Azure Devops project. 
-To do so you should go to the **Repos** section, clickon the repository list and then on **Import repository**
-
-![Open Import Repository](./img/01_import_repo.png)
-
-The you should insert in the *Clone url* the link to this repository `https://github.com/vitaled/azure.git`   
-
-![Import Repository](./img/02_import_git_repo.png)
-
-After the import you should clone this repo locally from your Azure devops account. The fastest way to do that is to click on  **Clone in VS code**
-
-![Clone to vs code](./img/03_clone_vs_code.png)
+The first step is to clone this repository into your local envinronment. 
 
 ```bash
 git clone https://github.com/vitaled/azure.git
@@ -44,23 +35,52 @@ In the next step, we are going to manually deploy the Azure Function in your Azu
 
 To do that you should right-click on the `CognitiveSearchNERCustomSkill` subfolder and then click on **Deploy to Function App...**
 
-![Deploy to Functions](./img/04_deploy_function_app.png)
+![Deploy to Functions](./img/deploy_to_function_app.jpg)
 
 You will be asked to select a subscription: 
 
-![Select subscription](./img/05_select_subscription.png)
+![Select subscription](./img/select_subscription.jpg)
 
 Then click on **Create new Function App in Azure...**
 
-![Create new function](./img/06_create_new_function.png)
+![Create new function](./img/create_new_function.jpg)
 
 You will be asked to provide a unique name for your function
 
-![get unique name](./img/07_select_unique_name.png) 
+![get unique name](./img/enter_unique_function_app_name.jpg) 
 
 Select **Python 3.9** as runtime stack
 
-![Select runtime](./img/08_select_runtime.png) 
+![Select runtime](./img/select_python_runtime.jpg) 
+
+Select your preferred region (usually the closer to your physical location)
+
+![Select region](./img/select_region.png)
+
+The Function will be created and the useless uploaded.
+
+After the creation, go to the function page in the Azure Portal and click on  `Functions` -> `PalyndromeAPI`
+
+![Go to function](./img/go_to_function.jpg)
+
+Then click on `Get Function Url` and copy the URL that we are going to use in the step (4)
+
+## Step 3: Upload sample Data
+
+Create a container called `books` in your storage account and upload into it the file available in the sample folder.
+
+## Step 4: Create your search Stack
+
+
+
+
+
+
+
+
+
+
+
 
 
 

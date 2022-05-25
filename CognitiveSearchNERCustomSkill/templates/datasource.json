@@ -1,0 +1,17 @@
+{
+    "name": "books",
+    "description": null,
+    "type": "adlsgen2",
+    "subtype": null,
+    "credentials": {
+        "connectionString": "DefaultEndpointsProtocol=https;AccountName={{accountName}};AccountKey={{accountKey}}"
+    },
+    "container": {
+        "name": "books",
+        "query": null
+    },
+    "dataChangeDetectionPolicy": null,
+    "dataDeletionDetectionPolicy": null,
+    "encryptionKey": null,
+    "identity": null
+}
